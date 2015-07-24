@@ -13,7 +13,3 @@ def index(request):
 def detail(request, card_id):
     card = get_object_or_404(Cards, pk=card_id)
     return render(request, 'cards/detail.html', {'card': card})
-
-
-
-
