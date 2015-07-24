@@ -6,12 +6,14 @@ from django.conf import settings
 from .api import UserViewSet
 from rest_framework import routers
 from polls.api import QuestionViewSet, ChoiceViewSet
-
+from cards.api import CardViewSet
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'questions', QuestionViewSet)
 router.register(r'choices', ChoiceViewSet)
+router.register(r'cards', CardViewSet)
+
 
 
 urlpatterns = [
