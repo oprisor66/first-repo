@@ -1,0 +1,15 @@
+
+<html>
+<body>
+	<h1 color="Red">Cards</h1>
+{% if latest_card_list %}
+    <ul>
+    {% for card in latest_card_list %}
+        <li><a href="/cards/{{ card.id }}/">{{ card.name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No cards are available.</p>
+{% endif %}
+</body>
+</html>

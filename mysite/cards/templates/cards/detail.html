@@ -1,0 +1,28 @@
+
+<html>
+<head></head>
+ <body>
+  <div style="border-radius:25px; background-color:#484848 ; width:500px;">
+      <div align="center" style="border-radius:10px; color:#480000 ; background-color:#202020; width:500; ">	
+        <h1 style="text-decoration:underline;">{{ card.owner }}</h1>
+      </div>
+     
+      <div align="center" style="background-color:006699; border-radius:50px;">
+        <h4 >{{ card.name}}</h4>
+      </div>
+  
+   
+      <div align="center" style="background-color:006699; border-radius:50px;">
+      <a href="{{card.url}}" style="color:black;">Image url</p></a>
+      </div>
+   
+      <img src="{{card.image.url}}" border="5" 
+       height="400" width="490">
+     
+      <ul style="list-style-type:square;">
+        <li>{{ card.media_type}}</li>
+        <li>{{ card.create_at}}</li>
+      </ul>
+  </div>
+ </body>
+</html>
