@@ -6,7 +6,7 @@ from rest_framework import serializers, viewsets
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username', 'email', 'is_staff','first-name','last-name')
+        fields = ('url', 'username', 'email', 'is_staff','first_name','last_name')
 # ViewSets define the view behavior.
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
